@@ -12,6 +12,7 @@ import Todo from "@/app/models/TodosModels";
 import EditToDoModal from "@/components/EditToDoModal";
 
 
+export const dynamic = 'force-dynamic'
 
 export type Todo = {
     _id?: string,

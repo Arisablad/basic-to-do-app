@@ -23,6 +23,7 @@ const formSchema = z.object({
     done: z.boolean().optional()
 })
 
+export const dynamic = 'force-dynamic'
 function Page() {
     const {toast} = useToast()
 

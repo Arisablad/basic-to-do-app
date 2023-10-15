@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    staticPageGenerationTimeout: 180,
+    staticPageGenerationTimeout: 190,
     reactStrictMode: true,
     experimental: {
         serverComponentsExternalPackages: ["mongoose"]

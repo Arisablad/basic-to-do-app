@@ -7,9 +7,7 @@ const dbConnection = async () => {
             throw new Error("Please define the MONGO_URI environment variable inside .env.local");
         }
         const client = await mongoose.connect(MONGO_URI);
-        console.log("Connected to MongoDB database", client.connection.host);
-    } catch (error) {a
-        console.log("Error connecting to MongoDB database", error);
+    } catch (error) {
         process.exit(1);
     }
 }

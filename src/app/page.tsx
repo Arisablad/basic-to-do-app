@@ -36,15 +36,10 @@ export default function Home() {
                 const data = await response.json()
                 setAllTodos(data.todos)
             } catch (e) {
-                toast({
-                    title: "Error",
-                    description: "Something went wrong",
-                    variant: "destructive",
-                    duration: 2000
-                })
+                throw new Error("Something went wrong")
             }
         }
-        fetchData()
+        void fetchData()
     }, [])
 
     const markTodoAsCompleted = async (todo : Todo) => {
